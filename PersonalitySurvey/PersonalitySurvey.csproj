@@ -66,7 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\ColourWheel.png" />
+    <Content Include="img\reSize_logo.jpg" />
     <Content Include="jqmTemplate.html" />
+    <Content Include="js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

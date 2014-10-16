@@ -1,98 +1,215 @@
-<!-- Example jQuery Mobile File -->
+﻿<!-- Example jQuery Mobile File -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>jQuery Mobile Template</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>jQuery Mobile Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    
 </head>
-
 <body>
-<div data-role="page" id="home">
-  <div data-role="header" >
-    <h1>mySite</h1>
-  </div>
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#home" class="ui-btn-active ui-state-persist"  data-icon="home">Home</a></li>
-      <li><a href="#products" >Products</a></li>
-      <li><a href="#services" >Services</a></li>
-      <li><a href="#contact" >Contact</a></li>
-    </ul>
-  </div>
-  <section role="main" class="ui-content">
-    <p> This is my homepage content</p>
-  </section>
-  <div data-role="footer"  data-position="fixed">
-    <h4>Page Footer</h4>
-  </div>
-</div>
-<div data-role="page" id="products">
-  <div data-role="header">
-    <h1>Products </h1>
-  </div>
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#home"  data-icon="home" >Home</a></li>
-      <li><a href="#products" >Products</a></li>
-      <li><a href="#services" >Services</a></li>
-      <li><a href="#contact" >Contact</a></li>
-    </ul>
-  </div>
-  <div data-role="content"> Content </div>
-  <div data-role="footer"data-position="fixed">
-    <h4>Page Footer</h4>
-  </div>
-</div>
-<div data-role="page" id="services">
-  <div data-role="header">
-    <h1>Services</h1>
-  </div>
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#home"  data-icon="home">Home</a></li>
-      <li><a href="#products"  >Products</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact" >Contact</a></li>
-    </ul>
-  </div>
-  <div data-role="content"> <a href="#dialog1" class="ui-btn ui-shadow ui-btn-inline ui-btn-b">my Dialog</a> </div>
-  <div data-role="footer"data-position="fixed">
-    <h4>Page Footer</h4>
-  </div>
-</div>
-<div data-role="page" id="contact">
-  <div data-role="header">
-    <h1>Contact</h1>
-  </div>
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#home"  data-icon="home">Home</a></li>
-      <li><a href="#products"  >Products</a></li>
-      <li><a href="#services"  >Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <div data-role="content">
-    <form action="" method="get" name="contactForm">
-      Content
-      <button class="ui-btn ui-corner-all" >submit</button>
-    </form>
-  </div>
-  <div data-role="footer"data-position="fixed">
-    <h4>Page Footer</h4>
-  </div>
-</div>
-<div data-role="page" id="dialog1" data-dialog="true">
-  <div data-role="header">
-    <h1>My Dialog</h1>
-  </div>
-  <div data-role="content">
-    <p> dialog content </p>
-  </div>
-</div>
+
+    <!--HOME PAGE-->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Personality Survey</h1>
+            <img src="img/reSize_logo.jpg" />
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-theme="b">Home</a></li>
+                <li><a href="#survey" data-icon="check" data-theme="b">Survey</a></li>
+                <li><a href="#contact" data-icon="grid" data-theme="b">Contact Me</a></li>
+            </ul>
+        </div>
+        <section role="main" class="ui-content">
+            <img src="img/ColourWheel.png" />
+        </section>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy;2014, Jong-Hwa Park</h4>
+        </div>
+    </div>
+
+    <!--SURVEY QUESTIONS PAGE-->
+    <div data-role="page" id="survey">
+        <div data-role="header">
+            <h1>Survey Questions</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+                <li><a href="#survey" class="ui-btn-active ui-state-persist" data-icon="check" data-theme="b">Survey</a></li>
+                <li><a href="#contact" data-icon="grid" data-theme="b">Contact Me</a></li>
+            </ul>
+        </div>
+        <div data-role="content">
+            <form>
+                <fieldset data-role="controlgroup">
+                    <legend>1. You prefer to keep your appearance:</legend>
+                    <input type="radio" name="1q" id="1qa" value="a">
+                    <label for="1qa">Functional </label>
+                    <input type="radio" name="1q" id="1qb" value="b">
+                    <label for="1qb">Fashionable </label>
+                    <input type="radio" name="1q" id="1qc" value="c">
+                    <label for="1qc">Casual </label>
+                    <input type="radio" name="1q" id="1qd" value="d">
+                    <label for="1qd">Conservative  </label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>2. What types of goals do you set for yourself?</legend>
+                    <input type="radio" name="2q" id="2qa" value="a">
+                    <label for="2qa">Challenging Goals  </label>
+                    <input type="radio" name="2q" id="2qb" value="b">
+                    <label for="2qb">I don’t Set Goals  </label>
+                    <input type="radio" name="2q" id="2qc" value="c">
+                    <label for="2qc">Short-Term Goals </label>
+                    <input type="radio" name="2q" id="2qd" value="d">
+                    <label for="2qd">Long-Term Goals  </label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>3. Your optimal work environment is:</legend>
+                    <input type="radio" name="3q" id="3qa" value="a">
+                    <label for="3qa">Busy & Efficient</label>
+                    <input type="radio" name="3q" id="3qb" value="b">
+                    <label for="3qb">Stimulating & Social</label>
+                    <input type="radio" name="3q" id="3qc" value="c">
+                    <label for="3qc">Relaxed & Friendly</label>
+                    <input type="radio" name="3q" id="3qd" value="d">
+                    <label for="3qd">Structured & Organized</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>4. In Which type of environment do you prefer to work the MOST?</legend>
+                    <input type="radio" name="4q" id="4qa" value="a">
+                    <label for="4qa">Where I have the freedom to set my own priorities</label>
+                    <input type="radio" name="4q" id="4qb" value="b">
+                    <label for="4qb">Where there are a lot of people to talk to</label>
+                    <input type="radio" name="4q" id="4qc" value="c">
+                    <label for="4qc">Where there is a regular routine of events</label>
+                    <input type="radio" name="4q" id="4qd" value="d">
+                    <label for="4qd">Where changes are made slowly and carefully</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>5. Your preferred learning style is:</legend>
+                    <input type="radio" name="5q" id="5qa" value="a">
+                    <label for="5qa">Learning by teaching others</label>
+                    <input type="radio" name="5q" id="5qb" value="b">
+                    <label for="5qb">Learning through interactivity</label>
+                    <input type="radio" name="5q" id="5qc" value="c">
+                    <label for="5qc">Learning by taking things slow and listening</label>
+                    <input type="radio" name="5q" id="5qd" value="d">
+                    <label for="5qd">Learning by reading and independent research</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>6. How do you go about handling tasks?</legend>
+                    <input type="radio" name="6q" id="6qa" value="a">
+                    <label for="6qa">I like to do things MY way</label>
+                    <input type="radio" name="6q" id="6qb" value="b">
+                    <label for="6qb">I like to do things the FUN way</label>
+                    <input type="radio" name="6q" id="6qc" value="c">
+                    <label for="6qc">I like to do things the EASY way </label>
+                    <input type="radio" name="6q" id="6qd" value="d">
+                    <label for="6qd">I like to do things the RIGHT way</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>7. When given a task you are concerned with:</legend>
+                    <input type="radio" name="7q" id="7qa" value="a">
+                    <label for="7qa">What it does, when it’s due and how much it costs</label>
+                    <input type="radio" name="7q" id="7qb" value="b">
+                    <label for="7qb">Doing it differently, new possibilities and who is involved</label>
+                    <input type="radio" name="7q" id="7qc" value="c">
+                    <label for="7qc">The impact on others, it’s benefits and maintaining integrity</label>
+                    <input type="radio" name="7q" id="7qd" value="d">
+                    <label for="7qd">Why we are doing it, how it works and how it fits.</label>
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>8. When given a high-profile task you focus on:</legend>
+                    <input type="radio" name="8q" id="8qa" value="a">
+                    <label for="8qa">Getting the job done</label>
+                    <input type="radio" name="8q" id="8qb" value="b">
+                    <label for="8qb">Networking with others</label>
+                    <input type="radio" name="8q" id="8qc" value="c">
+                    <label for="8qc">Maintaining relationships</label>
+                    <input type="radio" name="8q" id="8qd" value="d">
+                    <label for="8qd">Following the Process</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>9. How do you handle a financial budget?</legend>
+                    <input type="radio" name="9q" id="9qa" value="a">
+                    <label for="9qa">I have others develop the budget and I provide direction</label>
+                    <input type="radio" name="9q" id="9qb" value="b">
+                    <label for="9qb">Budget? What Budget?</label>
+                    <input type="radio" name="9q" id="9qc" value="c">
+                    <label for="9qc">I stick pretty close to the budget.</label>
+                    <input type="radio" name="9q" id="9qd" value="d">
+                    <label for="9qd">I never exceed my budget.</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>10. Which situation do you dislike the MOST?</legend>
+                    <input type="radio" name="10q" id="10qa" value="a">
+                    <label for="10qa">Losing control</label>
+                    <input type="radio" name="10q" id="10qb" value="b">
+                    <label for="10qb">Being excluded</label>
+                    <input type="radio" name="10q" id="10qc" value="c">
+                    <label for="10qc">Being devalued</label>
+                    <input type="radio" name="10q" id="10qd" value="d">
+                    <label for="10qd">Being unprepared</label>
+                </fieldset>
+            </form>
+
+            <div id="resultButton" style="visibility:hidden;">
+                <a href="#result" class="ui-btn ui-shadow ui-btn-inline ui-btn-b">Result</a>
+            </div>
+            
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy;2014, Jong-Hwa Park</h4>
+        </div>
+    </div>
+
+    <!--CONTACT ME PAGE-->
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>Contact Me</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+                <li><a href="#survey" data-icon="check" data-theme="b">Survey</a></li>
+                <li><a href="#contact" class="ui-btn-active ui-state-persist" data-icon="grid" data-theme="b">Contact Me</a></li>
+            </ul>
+        </div>
+        <div data-role="content">
+            <form action="#home" method="get" name="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" value="">
+                <label for="contactNumber">Contact Number: </label>
+                <input type="tel" name="telNum" id="telNum" value="">
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" id="email" value="">
+                <button class="ui-btn ui-corner-all">submit</button>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy;2014, Jong-Hwa Park</h4>
+        </div>
+    </div>
+
+    <!--SURVEY RESULT PAGE-->
+    <div data-role="page" id="result" data-dialog="true">
+        <div data-role="header">
+            <h1>Survey Result</h1>
+        </div>
+        <div data-role="content">
+            <p> dialog content </p>
+            <a href="#home" class="ui-btn ui-shadow ui-btn-inline ui-btn-b">OK</a>
+        </div>
+    </div>
+
 </body>
 </html>
