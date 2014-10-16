@@ -1,0 +1,98 @@
+<!-- Example jQuery Mobile File -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery Mobile Template</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+  <div data-role="header" >
+    <h1>mySite</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active ui-state-persist"  data-icon="home">Home</a></li>
+      <li><a href="#products" >Products</a></li>
+      <li><a href="#services" >Services</a></li>
+      <li><a href="#contact" >Contact</a></li>
+    </ul>
+  </div>
+  <section role="main" class="ui-content">
+    <p> This is my homepage content</p>
+  </section>
+  <div data-role="footer"  data-position="fixed">
+    <h4>Page Footer</h4>
+  </div>
+</div>
+<div data-role="page" id="products">
+  <div data-role="header">
+    <h1>Products </h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home"  data-icon="home" >Home</a></li>
+      <li><a href="#products" >Products</a></li>
+      <li><a href="#services" >Services</a></li>
+      <li><a href="#contact" >Contact</a></li>
+    </ul>
+  </div>
+  <div data-role="content"> Content </div>
+  <div data-role="footer"data-position="fixed">
+    <h4>Page Footer</h4>
+  </div>
+</div>
+<div data-role="page" id="services">
+  <div data-role="header">
+    <h1>Services</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home"  data-icon="home">Home</a></li>
+      <li><a href="#products"  >Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" >Contact</a></li>
+    </ul>
+  </div>
+  <div data-role="content"> <a href="#dialog1" class="ui-btn ui-shadow ui-btn-inline ui-btn-b">my Dialog</a> </div>
+  <div data-role="footer"data-position="fixed">
+    <h4>Page Footer</h4>
+  </div>
+</div>
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home"  data-icon="home">Home</a></li>
+      <li><a href="#products"  >Products</a></li>
+      <li><a href="#services"  >Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+    <form action="" method="get" name="contactForm">
+      Content
+      <button class="ui-btn ui-corner-all" >submit</button>
+    </form>
+  </div>
+  <div data-role="footer"data-position="fixed">
+    <h4>Page Footer</h4>
+  </div>
+</div>
+<div data-role="page" id="dialog1" data-dialog="true">
+  <div data-role="header">
+    <h1>My Dialog</h1>
+  </div>
+  <div data-role="content">
+    <p> dialog content </p>
+  </div>
+</div>
+</body>
+</html>
